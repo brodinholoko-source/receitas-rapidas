@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Planejador de Refeições</title>
 
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f5f7fb;
+  color:#333;
+}
+
+header{
+  background:#6c8cff;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+nav{
+  background:#ffffff;
+  padding:10px;
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+button{
+  padding:10px 16px;
+  border:none;
+  background:#e3e8ff;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#cfd8ff;
+}
+
+.container{
+  max-width:900px;
+  margin:20px auto;
+  padding:10px;
+}
+
+.card{
+  background:white;
+  padding:16px;
+  border-radius:12px;
+  margin-bottom:15px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🍽️ Planejador de Refeições</h1>
+  <p>Receitas com o que você tem em casa</p>
+</header>
+
+<nav>
+  <button>🏠 Início</button>
+  <button>🥕 Ingredientes</button>
+  <button>📖 Receitas</button>
+  <button>🛒 Lista de Compras</button>
+</nav>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Adicionar Ingredientes</h2>
+    <input type="text" placeholder="Ex: arroz, frango..." style="width:70%">
+    <button>Adicionar</button>
+  </div>
+
+  <div class="card">
+    <h2>Receitas Sugeridas</h2>
+    <p>— Strogonoff de frango</p>
+    <p>— Arroz de forno</p>
+    <p>— Omelete</p>
+  </div>
+
+  <div class="card">
+    <h2>Lista de Compras</h2>
+    <p>• Leite</p>
+    <p>• Tomate</p>
+    <p>• Queijo</p>
+  </div>
+
+</div>
+
+</body>
+</html>
